@@ -89,6 +89,7 @@ angular.module('dialogDemo1', ['ngMaterial'])
 
   $scope.showPrerenderedDialog = function(ev) {
     $mdDialog.show({
+      controller: DialogController,
       contentElement: '#myDialog',
       parent: angular.element(document.body),
       targetEvent: ev,

@@ -1272,7 +1272,7 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '      <tr>\n' +
     '        <td>layout-gt-lg</td>\n' +
     '        <td>flex-gt-lg</td>\n' +
-    '        <td>width &gt;= <b>1920</b>px</td>\n' +
+    '        <td>width &gt;= <b>1920/b>px</td>\n' +
     '      </tr>\n' +
     '      <tr>\n' +
     '        <td>layout-xl</td>\n' +
@@ -1973,11 +1973,7 @@ angular.module('docsApp').run(['$templateCache', function($templateCache) {
     '  </span>\n' +
     '</md-button>\n' +
     '\n' +
-    '<ul id="docs-menu-{{section.name | nospace}}"\n' +
-    '  class="menu-toggle-list"\n' +
-    '  aria-hidden="{{!renderContent}}"\n' +
-    '  ng-style="{ visibility: renderContent ? \'visible\' : \'hidden\' }">\n' +
-    '\n' +
+    '<ul id="docs-menu-{{section.name | nospace}}" class="menu-toggle-list">\n' +
     '  <li ng-repeat="page in section.pages">\n' +
     '    <menu-link section="page"></menu-link>\n' +
     '  </li>\n' +
